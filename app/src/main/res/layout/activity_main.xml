@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#e0e0e0"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
     <ImageView
@@ -25,11 +26,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Add Watermark"/>
-    <Button
-        android:id="@+id/button_download"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:id="@+id/test_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="gone"
         android:layout_gravity="center_horizontal"
-        android:text="download"/>
+        android:src="@drawable/pills" />
 
 </LinearLayout>
