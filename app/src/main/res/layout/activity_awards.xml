@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EDEFF7"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_margin="@dimen/margin_size"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_top_rectangle_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:autoSizeTextType="uniform"
+            android:layout_margin="16dp"
+            android:text="Awards"
+            android:textColor="#132943"
+            android:fontFamily="@font/lato_bold"
+            android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_margin="16dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_white_curve_rect"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="16dp"
+                    android:textSize="16sp"
+                    android:autoSizeTextType="uniform"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="What are Awards?"
+                    android:textColor="#A8B4C4"
+                    android:fontFamily="@font/lato_bold"
+                    android:textStyle="normal" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size"
+                    android:layout_marginBottom="@dimen/margin_size"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_information"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Select one"
+            android:textColor="#A8B4C4"
+            android:fontFamily="@font/lato_bold"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/ic_backgound_grey_rect"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_size"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_icon_heart"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textSize="18sp"
+                android:autoSizeTextType="uniform"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FE6969"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="1234"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:background="@color/white"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_size"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_plus"/>
+
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/margin_size"
+    android:layout_marginRight="@dimen/margin_size">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bkg"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bronze"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#132943"
+                android:autoSizeMaxTextSize="16sp"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:text="Bronze"
+                android:fontFamily="@font/lato"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="16sp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:autoSizeTextType="uniform"
+                    android:layout_marginTop="@dimen/margin_size"
+                    android:text="The cutest of all awards, it will melt your heart!"
+                    android:textColor="#A8B4C4"
+                    android:fontFamily="@font/lato"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_icon_heart"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:textSize="22sp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FE6969"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:text="10"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bkg"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/silver"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#132943"
+                    android:autoSizeMaxTextSize="16sp"
+                    android:layout_marginBottom="@dimen/margin_size"
+                    android:text="Silver"
+                    android:fontFamily="@font/lato"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="16sp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:autoSizeTextType="uniform"
+                    android:layout_marginTop="@dimen/margin_size"
+                    android:text="Aah! Silver has properties to boost and cheer you up!"
+                    android:textColor="#A8B4C4"
+                    android:fontFamily="@font/lato"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_icon_heart"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:textSize="22sp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FE6969"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:text="20"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bkg"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_gold"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#132943"
+                    android:autoSizeMaxTextSize="16sp"
+                    android:layout_marginBottom="@dimen/margin_size"
+                    android:text="Gold"
+                    android:fontFamily="@font/lato"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="16sp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:autoSizeTextType="uniform"
+                    android:layout_marginTop="@dimen/margin_size"
+                    android:text="Now who doesn’t love the shiniest award?"
+                    android:textColor="#A8B4C4"
+                    android:fontFamily="@font/lato"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_icon_heart"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:textSize="22sp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FE6969"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:text="30"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bkg"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cup"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#132943"
+                    android:autoSizeMaxTextSize="16sp"
+                    android:layout_marginBottom="@dimen/margin_size"
+                    android:text="The Cup"
+                    android:fontFamily="@font/lato"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="16sp"
+                    android:autoSizeTextType="uniform"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="@dimen/margin_size"
+                    android:text="Salute! Respect and prestige come with The Cup!"
+                    android:textColor="#A8B4C4"
+                    android:fontFamily="@font/lato"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_icon_heart"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:textSize="22sp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FE6969"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:text="40"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bkg"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_crown"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#132943"
+                    android:autoSizeMaxTextSize="16sp"
+                    android:layout_marginBottom="@dimen/margin_size"
+                    android:text="The Crown"
+                    android:fontFamily="@font/lato"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="16sp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:autoSizeTextType="uniform"
+                    android:layout_marginTop="@dimen/margin_size"
+                    android:text="The highest, legendary and most sparkling award!"
+                    android:textColor="#A8B4C4"
+                    android:fontFamily="@font/lato"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_icon_heart"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:textSize="22sp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FE6969"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:text="50"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+    </ScrollView>
