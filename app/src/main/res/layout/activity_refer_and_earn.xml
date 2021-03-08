@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:translationY="-170dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:id="@+id/blue_curve"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_blue_curve_enter"/>
+    <View
+        android:id="@+id/support"
+        android:layout_marginTop="320dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/support"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_bottom_blue_curve"/>
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="96dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:id="@+id/rocket_man"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_rocket_man"/>
+
+    <TextView
+        android:id="@+id/text_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="LIKE THE APP ? ⭐"
+        android:textAlignment="center"
+        android:textColor="#2C4367"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/blue_curve" />
+    <TextView
+        android:id="@+id/text_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/lato"
+        android:text="Refer your friends and get 20 Hearts\n each!!"
+        android:textAlignment="center"
+        android:textColor="#2C4367"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_like" />
+
+    <LinearLayout
+        android:id="@+id/referral_code_container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/ic_yellow_rectangle"
+        app:layout_constraintTop_toBottomOf="@id/text_heart">
+
+    <TextView
+        android:id="@+id/text_referral_code"
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:padding="8dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/lato"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:text="BBBX12345"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="viewEnd"
+        android:textColor="#BA9626"
+        android:autoSizeMaxTextSize="20dp"/>
+    <TextView
+        android:id="@+id/text_referral_code_text"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:maxLines="1"
+        android:text="  This is your referral code"
+        android:textColor="#BA9626"
+        android:autoSizeMaxTextSize="10sp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_press"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:textStyle="bold"
+        android:text="Press to copy"
+        android:maxLines="1"
+        android:layout_marginRight="60dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/referral_code_container"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/text_share"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/lato"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:background="@drawable/ic_grey_rect"
+        android:text="OR Press to share the app with your code"
+        android:autoSizeTextType="uniform"
+        android:textColor="#2C4367"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_press"
+        android:autoSizeMaxTextSize="20dp"/>
+
+    <TextView
+        android:id="@+id/text_works"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:textColor="#FAF4DC"
+        android:text="HOW IT WORKS?"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_share" />
+
+    <TextView
+        android:id="@+id/text_works_summary"
+        android:layout_width="match_parent"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:textColor="#FFFFFF"
+        android:lineSpacingExtra="8dp"
+        android:text="Share your code with your friends.
+Now whenever someone uses the code and signs up,
+both of you will get 20 Hearts each.
+You can refer as many people as you want and get 20 Hearts every time!!"
+        android:textSize="15sp"
+        android:maxLines="5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_works" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2C4367"
+        android:translationY="-70dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_works_summary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_bottom_sparkels"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

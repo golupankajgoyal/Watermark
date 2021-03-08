@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background=""
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:translationY="-170dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:id="@+id/blue_curve"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_blue_curve_enter"/>
+        <View
+            android:id="@+id/support"
+            android:layout_marginTop="340dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/support"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_bottom_blue_curve"/>
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_marginTop="96dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:id="@+id/rocket_man"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_rocket_man"/>
+
+        <TextView
+            android:id="@+id/text_like"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="LAST STEP  🤩"
+            android:textAlignment="center"
+            android:textColor="#2C4367"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/blue_curve" />
+        <TextView
+            android:id="@+id/text_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/lato"
+            android:text="Do you have a referral code?"
+            android:textAlignment="center"
+            android:textColor="#2C4367"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_like" />
+            
+            <TextView
+                android:id="@+id/text_referral_code_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_light_gray_rectangle"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato"
+                android:maxLines="1"
+                android:paddingLeft="24dp"
+                android:gravity="center_vertical"
+                android:autoSizeTextType="uniform"
+                android:text="ENTER THE CODE HERE"
+                android:textColor="#FFFFFF"
+                android:autoSizeMaxTextSize="15sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_heart"/>
+        <TextView
+            android:id="@+id/text_press"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:text="Or Skip"
+            android:maxLines="1"
+            android:layout_marginRight="70dp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_referral_code_text"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/text_share"
+            android:layout_width="100dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/lato_bold"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:background="@drawable/ic_light_yellow_rectangle"
+            android:text="CONFIRM"
+            android:autoSizeTextType="uniform"
+            android:textColor="#2C4367"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_referral_code_text"
+            android:autoSizeMaxTextSize="20dp"/>
+
+        <TextView
+            android:id="@+id/text_works"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="#FAF4DC"
+            android:text="HOW IT WORKS?"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_share" />
+
+        <TextView
+            android:id="@+id/text_works_summary"
+            android:layout_width="match_parent"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="#FFFFFF"
+            android:lineSpacingExtra="8dp"
+            android:text="If you have a referral code, enter it here.
+Then both you and the person whose code you used, will get 20 Hearts each."
+            android:textSize="16sp"
+            android:maxLines="5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_works" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2C4367"
+            android:translationY="-70dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_works_summary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_bottom_sparkels"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
